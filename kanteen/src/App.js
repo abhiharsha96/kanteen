@@ -19,6 +19,7 @@ import Footer from './components/Footer';
 
 import { UserProvider } from './contexts/userContext';
 import Editprofile from './components/Editprofile';
+import UpdatePassword from './components/UpdatePassword';
 
 export default function App() {
     return (
@@ -41,6 +42,7 @@ export default function App() {
                     <Route path='/contactus' element={<ContactUs />}></Route>
                     <Route path='/privacypolicy' element={<PrivacyPolicy />}></Route>
                     <Route path='/cancellationandrefund' element={<CancellationAndRefund />}></Route>
+                    <Route path='/updatepassword' element={<UpdatePassword />}></Route> 
                 </Routes>
                 <Footer />
             </UserProvider>

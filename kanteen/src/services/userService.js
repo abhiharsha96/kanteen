@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const serverUrl = process.env.REACT_APP_SERVER_URL || 'https://kanteen-server.onrender.com';
+const serverUrl = 'http://localhost:8080' || 'https://kanteen-server.onrender.com';
 
 class userService {
     //whether a email is already registered or not
@@ -51,6 +51,11 @@ class userService {
     paymentRequest(orderId,orderAmount,customerId,customerName,customerNumber){
         return axios.post(serverUrl + '/api/payment/checkout', { orderId, orderAmount, customerId, customerName, customerNumber })
     }
+    //editprofile
+    updateUser(emailId, name, mobileNumber) {
+        return axios.put(serverUrl + '/api/verify/update', { emailId, name, mobileNumber })
+    }
+
 }
 //eslint-disable-next-line
 export default new userService();

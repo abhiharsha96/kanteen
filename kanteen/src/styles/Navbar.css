@@ -32,7 +32,6 @@
     display: none;
 }
 
-
 .hamburger button{
     background-color: transparent;
     border: none;
@@ -52,10 +51,10 @@
     left: 0;
     width: 200px;
     padding: 10px 6px;
-    color:white;
-    background-color:#e7e7e7;
+    color: #bf0c45;
+    background-color: #e7e7e7;
     z-index: 5;
-    border-radius:0px 25px 25px; 
+    border-radius: 0px 25px 25px; 
 }
 
 .sidenav-heading{
@@ -95,4 +94,65 @@
 
 .show-nav{
     display: block;
+}
+
+.dropdown-content {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 45px; /* Adjust based on your requirement */
+    right: 20px;
+    background-color: #e7e7e7;
+    color: #bf0c45;
+    width: 200px;
+    padding: 10px;
+    border-radius: 25px 0px 25px 0px;
+    z-index: 5;
+    
+}
+
+.dropdown-content h3 {
+    padding-left: 15%;
+    margin-bottom: 10px;
+    color: #bf0c45;
+}
+.dropdown-edit{
+    color: #bf0c45;
+    font-family: 'poppins';
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 500;
+}
+.dropdown-edit a{
+    color:#bf0c45;
+    font-family: 'poppins';
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 500;
+    margin-left: 4px;
+    padding-left: 7px;
+
+}
+.dropdown-edit a:hover {
+    background-color: #bf0c45;
+    color: white;
+    border-radius: 5px;
+}
+
+.dropdown-content button {
+    background-color: #bf0c45;
+    color: white;
+    border: none;
+    padding: 6px 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: 'poppins';
+    font-size: larger;
+}
+
+.dropdown-content button:hover {
+    background-color: #a80b3e;
 }
